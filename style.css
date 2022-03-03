@@ -1,0 +1,84 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fbf7ee;
+  width: 550px;
+  height: 550px;
+  border-radius: 10px;
+}
+
+.display-area {
+  display: block;
+  height: 260px;
+  width: 550px;
+  border-radius: 0px;
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+  margin: 0;
+}
+
+.display-area h1 {
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 53px;
+  padding-bottom: 30px;
+}
+
+.display-area input {
+  border: 0;
+  width: 300px;
+  background: 0;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 97.5723px;
+  text-align: center;
+  color: #ffffff;
+  caret-color: rgba(255, 255, 255, 0.5);
+  margin-left: 130px;
+}
+
+.display-area input::placeholder {
+  color: aliceblue;
+  opacity: 0.3;
+}
+
+.box {
+  margin: 50px;
+  height: 290px;
+}
+
+.box h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #1a1921;
+}
+
+.box p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #4e4e4e;
+}
+
+.length-box,
+.volume-box,
+.mass-box {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
