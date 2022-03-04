@@ -5,6 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1a1921;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
   display: block;
   height: 260px;
   width: 550px;
-  border-radius: 0px;
+  border-radius: 10px 10px 0 0;
   background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
   margin: 0;
 }
@@ -38,13 +39,14 @@ body {
 .display-area input {
   border: 0;
   width: 300px;
-  background: 0;
+  background: none;
   font-family: Inter;
   font-weight: 800;
   font-size: 97.5723px;
   text-align: center;
   color: #ffffff;
   caret-color: rgba(255, 255, 255, 0.5);
+  display: block;
   margin-left: 130px;
 }
 
@@ -54,7 +56,6 @@ body {
 }
 
 .box {
-  margin: 50px;
   height: 290px;
 }
 
@@ -65,6 +66,7 @@ body {
   font-size: 14px;
   text-align: center;
   color: #1a1921;
+  margin: 0;
 }
 
 .box p {
@@ -74,11 +76,30 @@ body {
   font-size: 14px;
   text-align: center;
   color: #4e4e4e;
+  margin: 0;
 }
 
 .length-box,
 .volume-box,
 .mass-box {
-  margin-top: 27px;
-  margin-bottom: 27px;
+  line-height: 2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 300px;
+    max-height: 100vh;
+  }
+
+  .display-area {
+    width: 100%;
+  }
+  .display-area input {
+    margin: 0;
+  }
+  .box {
+    height: 200px;
+  }
 }
