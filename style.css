@@ -1,7 +1,11 @@
-body {
-  width: 100vw;
-  height: 100vh;
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +25,6 @@ body {
   width: 550px;
   border-radius: 10px 10px 0 0;
   background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
-  margin: 0;
 }
 
 .display-area h1 {
@@ -31,13 +34,13 @@ body {
   text-align: center;
   letter-spacing: -0.05em;
   color: #ffffff;
-  margin: 0;
   padding-top: 53px;
   padding-bottom: 30px;
 }
 
 .display-area input {
-  border: 0;
+  border-style: hidden;
+  outline: none;
   width: 300px;
   background: none;
   font-family: Inter;
@@ -56,7 +59,7 @@ body {
 }
 
 .box {
-  height: 290px;
+  margin: 12px 0px;
 }
 
 .box h2 {
@@ -66,40 +69,36 @@ body {
   font-size: 14px;
   text-align: center;
   color: #1a1921;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .box p {
   font-family: Inter;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   text-align: center;
   color: #4e4e4e;
-  margin: 0;
 }
 
 .length-box,
 .volume-box,
 .mass-box {
-  line-height: 2;
+  line-height: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 @media (max-width: 400px) {
   .container {
-    width: 300px;
+    max-width: 300px;
     max-height: 100vh;
   }
 
   .display-area {
     width: 100%;
   }
+
   .display-area input {
     margin: 0;
-  }
-  .box {
-    height: 200px;
   }
 }
